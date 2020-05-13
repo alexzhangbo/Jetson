@@ -1,2 +1,2 @@
 # Jetson
-Jetson 初始化 Shell
+本项目只针对JetPack 4.4。
