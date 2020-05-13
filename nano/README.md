@@ -1,1 +1,1 @@
-
+# sudo bash init.sh
