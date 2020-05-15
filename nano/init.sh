@@ -3,6 +3,11 @@ apt-get update -y
 apt-get upgrade -y
 apt autoremove -y
 apt-get install dconf-editor -y
+
+export CUDA_HOME=/usr/local/cuda-10.2
+export LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64:$LD_LIBRARY_PATH
+export PATH=/usr/local/cuda-10.2/bin:$PATH
+
 apt-get install libhdf5-serial-dev hdf5-tools libhdf5-dev zlib1g-dev zip libjpeg8-dev -y
 apt-get install python3-pip -y
 pip3 install -U pip testresources setuptools
