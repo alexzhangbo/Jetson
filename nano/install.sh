@@ -48,12 +48,13 @@ curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/instal
 chsh -s /usr/bin/zsh
 
 echo -e "\033[1;32m\n install TF-2.0 \n...\033[0m"
-wget https://developer.download.nvidia.com/compute/redist/jp/v42/tensorflow-gpu/tensorflow_gpu-2.0.0+nv19.11-cp36-cp36m-linux_aarch64.whl
+# wget https://developer.download.nvidia.com/compute/redist/jp/v42/tensorflow-gpu/tensorflow_gpu-2.0.0+nv19.11-cp36-cp36m-linux_aarch64.whl
+wget https://developer.download.nvidia.com/compute/redist/jp/v44/tensorflow/tensorflow-1.15.2+nv20.4-cp36-cp36m-linux_aarch64.whl
 
 sudo apt-get install libhdf5-serial-dev hdf5-tools libhdf5-dev zlib1g-dev zip libjpeg8-dev
 sudo pip3 install -U pip testresources setuptools
 
-sudo pip3 install -U tensorflow_gpu-2.0.0+nv19.11-cp36-cp36m-linux_aarch64.whl Processing ./tensorflow_gpu-2.0.0+nv19.11-cp36-cp36m-linux_aarch64.whl
+sudo pip3 install -U tensorflow-1.15.2+nv20.4-cp36-cp36m-linux_aarch64.whl Processing ./tensorflow-1.15.2+nv20.4-cp36-cp36m-linux_aarch64.whl
 
 
 # If you don't want to use TF 2.0
